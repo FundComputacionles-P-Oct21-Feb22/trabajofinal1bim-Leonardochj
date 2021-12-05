@@ -1,0 +1,41 @@
+Integrantes: JonathanCoronel y Leonardochj
+
+//Dados dos puntos X y Y , que son las coordenadas del plano cartesiano, haga un algoritmo para clasificar el cuadrante del plano donde está ubicada la coordenada (X, Y ).
+
+//Solución en algoritmo
+1) Inicio
+2) Ingresar las coordenadas X y Y
+3) Ingresar las condicionales para saber en que cuadrante esta ubicado las coordenadas en el plano cartesiano
+4) Presentar el cuadrante
+5) Fin
+
+//Solución en miniespecificación
+1) Inicio
+2) X, d[0, n]
+3) Y, d[0, n]
+4) String cuadrante, x(50)[{a-z}, {A-B}, {BS}] <-- ""
+
+5) Escribir "Ingresar la coordenada x"
+6) Leer X
+7) Escribir "Ingresar la coordenada y"
+8) Leer Y
+
+9) Si x >= 0 and y >= 0 entonces
+10)cuadrante <-- "primer cuadrante"
+11)Fin si
+
+12)Si x <= 0 and y >= 0 entonces
+10)cuadrante <-- "segundo cuadrante"
+11)Fin si
+
+13)Si x <= 0 and y <= 0 entonces
+14)cuadrante <-- "tercer cuadrante"
+15)Fin si
+
+16)Si x >= 0 and y <= 0 entonces
+17)cuadrante <-- "cuarto cuadrante"
+18)Fin si
+
+19)Escribir "Esta ubicado en:" + cuadrante
+
+20)Fin

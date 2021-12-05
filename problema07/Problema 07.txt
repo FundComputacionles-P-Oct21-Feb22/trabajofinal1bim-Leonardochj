@@ -1,0 +1,30 @@
+//Elaborar un algoritmo que permita leer un número par y calcule e imprima la 
+//suma de los números pares del 2 hasta el número leído. Si el número leído 
+//es menor a 2 debe imprimir un mensaje de error.
+
+//Miniespesificacion 
+
+1. Inicio 
+2. numero, i[0, n]
+3. inicio, i[0, n]<-- 2
+4.suma, i[0, n]<-- 0
+
+5. Escribir "Ingrese un numero par mayor o igual a dos"
+6. Leer numero
+7. Si numero  < 2 Entonces 
+8. Escribir "Error el numero ingresado es menor a 2"
+9. De lo contrario 
+10. Si numero MOD 2 == 0 Entonces 
+11. Mientras inicio <= numero Entonces 
+12. Si inicio MOD 2 == 0 Entonces 
+13. Escribir  inicio 
+14. suma <-- suma + inicio 
+15. inicio <-- inicio +2
+16. Fin si 
+17. Fin Mientras"
+18. Escribir "La suma de todos los numeros pares es de:" + suma
+19. De lo contrario 
+20. Escribir " El numero ingresado no es un numero par"
+21. Fin si 
+22. Fin si 
+23.Fin 

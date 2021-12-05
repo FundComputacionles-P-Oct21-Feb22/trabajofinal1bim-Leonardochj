@@ -1,0 +1,54 @@
+Integrantes: JonathanCoronel Y Leonardochj
+
+//Tomando con referencia la clase de sus ángulos, los triángulos se clasifican en:
+
+//Rectángulo tiene un ángulo recto (igual a 90°)
+//Obtusángulo tiene un ángulo obtuso (mayor que 90° pero menor 180°)
+//Acutángulo los tres ángulos son agudos (menor que 90°) Elaborar un algoritmo que permita leer el tamaño de los tres ángulos (A,B,C) de un triángulo e imprima qué tipo es.
+
+//Solución en algoritmo
+1) Inicio
+2) Se ingresa los 3 angulos
+3) Se realiza las condicionales para saber que tipo de angulo es (Si tiene un angulo recto, va a ser rectangulo; si tiene un angulo obtuso, va a ser obtusangulo; si los 3 angulos son agudos, es un acutangulo)
+4) Se presenta el tipo de triangulo
+5) Fin
+
+//Solucion en miniespecificación
+1) Inicio
+2) angulo1, d[0, n] 
+3) angulo2, d[0, n]
+4) angulo3, d[0, n]
+5) String tipo_angulo, x(50)[{a-z}, {A-B}, {BS}] <-- ""
+6) String rectangulo, x(50)[{a-z}, {A-B}, {BS}]
+
+7) Escribir "Ingresar el primer angulo"
+8) Leer angulo1
+9) Escribir "Ingresar el segundo angulo"
+10)Leer angulo2
+11)Escribir "Ingresar el tercer angulo"
+12)Leer angulo3
+
+13)Si angulo1 = 90 or angulo2 = 90 or angulo3 = 90 entonces
+14)tipo_angulo <-- "rectangulo"
+15)Caso contrario
+16)Si angulo1 < 90 or angulo2 < 90 or angulo3 < 90 entonces
+17)tipo_angulo <-- "acutangulo"
+18)Fin si
+19)Fin si
+
+20)Si (angulo1 > 90 and angulo1 < 180)  or (angulo2 > 90 and angulo2 < 180) or (angulo3 > 90 and angulo3 < 180) entonces
+21)tipo_angulo <-- "obtusangulo"
+22)Caso contrario
+23)Si angulo1 < 90 or angulo2 < 90 or angulo3 < 90 entonces
+24)tipo_angulo <-- "acutangulo"
+25)Fin si
+26)Fin si
+
+27)Si angulo1 < 90 or angulo2 < 90 or angulo3 < 90 entonces
+28)tipo_angulo <-- "acutangulo"
+29)Fin si
+
+30)triangulo <-- tipo_angulo
+31)Escribir "El triangulo es:" + triangulo
+
+32)Fin

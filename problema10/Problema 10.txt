@@ -1,0 +1,35 @@
+//Utilizando una estructura repetitiva diseñe un algoritmo para calcular e 
+//imprimir los k primeros términos de la serie:
+//S1 = 12−11+24−22+36−33+48−44
+//Algoritmo
+
+1. Inicio 
+2. Se Ingresan todos los numeros con los cuales se desean calcular la media y la varianza.
+3. Se utiliza un ciclo repetitivo el cual me permita guardar todos los numeros.
+4. se calcula la media suamando todos los numeros y dividiendo para el numero de digitos.
+5. se calcula la varianza con todos los datos obtenidos anteriormente, utilizando su formula correspondiente.
+6. Se presenta la media y la varianza.
+
+//Miniespesificacion 
+
+1. Inicio 
+2. var1, d[0, n]
+3. bandera, l[true, false]<--true 
+4. acMedia, d[0, n]<-- 0
+5. acMedia2, d[0, n]<-- 0
+6. varianza, d[0, n]
+7. contador , i[0, n]<-- 0
+8. resultado, x(50)[{a-z}, {BS}, {A-Z}])<-- " "
+
+9. Escribir "Escriba cada numero segido de un enter, para Terminar digie un 0 y dele enter"
+10. Leer var1
+11. Mientras var1 != 0  Entonces 
+12. acMedia <-- acMedia + var1
+13. acMedia2 <-- acMedia2 + var1 * var1
+14. var1 <-- Leer var1
+15. contador <-- contador + 1
+16. Fin Mientras"
+17. varianza <-- acMedia2/(contador-1)-(Math.pow(acMedia, 2)) /(contador*(contador-1))
+18. resultado <-- "La media es" + media + "La varianza muestral es:" + varianza 
+19. Escribir resultado
+20.Fin 

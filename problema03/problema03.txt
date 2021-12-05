@@ -1,0 +1,89 @@
+Integrantes: JonathanCoronel y Leonardochj
+
+//En un almacén de venta de trajes, si se compra uno se hace el 20% de descuento, si se compran 2, el 25%, si se compran 3, el 40%, y si compra más de 3, el 50%. 
+//Elaborar un algoritmo que lea la cantidad de trajes y el precio unitario (todos tienen el mismo precio) e imprima el subtotal por pagar, el descuento y el total por pagar.
+
+//Solucion en miniespecificación
+1) Inicio
+2) String nombre_empleado, x(50)[{a-z}, {A-B}, {BS}]
+3) horas_empleadas, i[0, n]
+4) cuota_hora, d[0, n]
+5) String cadenaFinal, x(50)[{a-z}, {A-B}, {BS}]
+6) tipo_empleado, i[0, n]
+7) sueldo_basico, d[0, n]
+8) sueldo_final, d[0, n] <-- 0
+9) sueldo_extra, d[0, n]
+10)horas_extras, d[0, n]
+11)sueldo_basico1, d[0, n]
+
+12)Escribir "Ingresar el nombre del empleado"
+13)Leer nombre_empleado 
+14)Escribir "Ingresar el tipo de empleado"
+15)Leer tipo_empleado
+16)Escribir "Ingresar las horas empleadas"
+17)Leer horas_empleadas
+18)Escribir "Ingresar la cuota que se le paga por hora"
+19)Leer cuota_hora
+
+20)Si tipo_empleado = 1 entonces
+21)Si horas_empleadas <= 40 entonces
+22)sueldo_basico <-- cuota_hora * horas_empleadas
+23)sueldo_final <-- sueldo_basico
+24)Caso contrario
+25)si horas_empleadas > 40 entonces
+26)horas_extras <-- horas_empleadas - 40
+27)sueldo_extra <-- 1.5 * horas_extras
+28)sueldo_basico1 <-- 40 * cuota_hora
+29)sueldo_final <-- sueldo_basico1 + sueldo_extra
+30)Fin si
+31)Fin si
+
+32)Caso contrario
+33)Si tipo_empleado = 2 entonces
+35)Si horas_empleadas <= 40 enntonces
+34)sueldo_basico <-- cuota_hora * horas_empleadas
+35)sueldo_final <-- sueldo_basico
+36)Caso contrario
+37)si horas_empleadas > 40 entonces
+38)horas_extras <-- horas_empleadas - 40
+39)sueldo_extra <-- 2 * horas_extras
+40)sueldo_basico1 <-- 40 * cuota_hora
+41)sueldo_final <-- sueldo_basico1 + sueldo_extra
+42)Fin si
+43)Fin si 
+
+
+44)Caso contrario
+45)tipo_empleado = 3 entonces
+46)Si horas_empleadas <= 40 enntonces
+47)sueldo_basico <-- cuota_hora * horas_empleadas
+48)sueldo_final <-- sueldo_basico
+49)Caso contrario
+50)si horas_empleadas > 40 entonces
+51)horas_extras <-- horas_empleadas - 40
+52)sueldo_extra <-- 2.5 * horas_extras
+53)sueldo_basico1 <-- 40 * cuota_hora
+54)sueldo_final <-- sueldo_basico1 + sueldo_extra
+55)Fin si
+56)Fin si 
+
+
+57)Caso contrario
+58)Si horas_empleadas <= 40 enntonces
+59)sueldo_basico <-- cuota_hora * horas_empleadas
+60)sueldo_final <-- sueldo_basico
+61)Caso contrario
+62)si horas_empleadas > 40 entonces
+63)horas_extras <-- horas_empleadas - 40
+64)sueldo_extra <-- 3 * horas_extras
+65)sueldo_basico1 <-- 40 * cuota_hora
+66)sueldo_final <-- sueldo_basico1 + sueldo_extra
+67)Fin si
+68)Fin si 
+69)Fin si
+
+70)cadenaFinal <-- {nombre_empleado + tipo_empleado + horas_empleadas + cuota_hora}
+71)Escribir "Datos personales son:" + cadenaFinal
+72)Escribir "El sueldo a pagar es:" + sueldo_final
+
+73)Fin

@@ -1,0 +1,54 @@
+Integrantes: JonathanCoronel y Leonardochj
+
+//Elaborar un algoritmo que permita leer 3 números e imprima el mayor. Debe validar que sean diferentes, es decir, si hay números iguales debe enviar un mensaje de error.
+
+//Solución en algoritmo
+1) Inicio
+2) Ingresar los 3 numeros
+3) Ingresar una condicionales opuestas para definir si hay error cuando los 3 numeros son iguales o el numero mayor si los 3 numeros son distintos
+4) Presentar el mensaje o presentar el numero mayor
+5) Fin
+
+//Solucion en miniespecificación
+1) Inicio
+2) primer_numero, i[0, n]
+3) segundo_numero, i[0, n]
+4) tercer_numero, i[0, n]
+5) String mensaje1, x(5)[{a-z}, {A-B}, {BS}] <-- ""
+6) mensaje, i[0, n]
+7) numero_mayor1, i[0, n] <-- 0 
+8) numero_mayor2, i[0, n] <--0
+9) numero_mayor3, i[0, n] <-- 0
+
+10) Escribir "Ingresar el primer numero"
+11) Leer primer_numero
+12) Escribir "Ingresar el segundo numero"
+13)Leer segundo_numero
+14)Escribir "Ingresar el tercer numero"
+15)Leer tercer_numero
+
+16)Si primer_numero = segundo_numero and primer_numero = tercer_numero and segundo_numero = tercer_numero entonces
+17)mensaje1 <-- "Error"
+
+18)Escribir "El mensaje es" + mensaje1
+
+19)Caso contrario
+20)Si primer_numero > segundo_numero and primer_numero > tercer_numero and segundo_numero != tercer_numero entonces
+21)numero_mayor1 <-- primer_numero
+22)mensaje <-- numero_mayor1
+23)Fin si
+
+24)Si primer_numero < segundo_numero and primer_numero != tercer_numero and segundo_numero > tercer_numero entonces
+25)numero_mayor2 <-- segundo_numero
+26)mensaje <-- numero_mayor2
+27)Fin si
+
+28)Si primer_numero != segundo_numero and primer_numero < tercer_numero and segundo_numero < tercer_numero entonces
+29)numero_mayor3 <-- tercer_numero
+30)mensaje <-- numero_mayor3
+31)Fin si
+32)Fin si
+
+33)Escribir "El numero mayor es" + mensaje
+
+34)Fin 

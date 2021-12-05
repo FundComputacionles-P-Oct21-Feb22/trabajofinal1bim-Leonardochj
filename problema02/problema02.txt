@@ -1,0 +1,63 @@
+Integrantes: JonathanCoronel y Leonardochj
+
+//En un almacén de venta de trajes, si se compra uno se hace el 20% de descuento, si se compran 2, el 25%, si se compran 3, el 40%, y si compra más de 3, el 50%. 
+//Elaborar un algoritmo que lea la cantidad de trajes y el precio unitario (todos tienen el mismo precio) e imprima el subtotal por pagar, el descuento y el total por pagar.
+
+//Solución en algoritmo
+1) Inicio
+2) Se ingresa la cantidad de trajes
+3) Se ingresa la el precio unitario
+4) Se multiplica la cantidad de los traje por el precio unitario para sacar el subtotal
+5) Se aplica las condicionales para determinar el valor total aplicado con el descuento, de acuerdo a la cantidad de trajes que compro
+6) Se presenta el subtotal
+7) Se presenta el descuento
+8) Se presenta el valor total
+9) Fin
+
+//Solución en miniespecificación
+1) Inicio
+2) cantidad_traje, i[0, n]
+3) precio_unitario, d[0, n]
+4) subtotal, d[0, n]
+5) valor_total, d[0, n] <-- 0
+6) descuento, d[0, n] <-- 0
+7) valor_final d[0, n] 
+8) porcentaje1, i[0, n] <-- 20
+9) porcentaje2, i[0, n] <-- 25
+10) porcentaje3, i[0, n] <-- 40
+11)porcentaje4, i[0, n] <-- 50
+
+12)Escribir "Ingresar la cantidad de trajes"
+13)Leer cantidad_trajes
+14)Escribir "Ingresar el precio unitario"
+15)Leer precio_unitario
+
+16)subtotal <-- precio_unitario * cantidad_trajes
+
+17)Si cantidad_trajes = 1 entonces
+18)descuento <-- (subtotal * porcentaje1)/100
+19)valor_total <-- subtotal - descuento
+20)Fin si
+
+21)Si cantidad_trajes = 2 entonces
+22)descuento <-- (subtotal * porcentaje2)/100
+23)valor_total <-- subtotal - descuento
+24)Fin si
+
+25)Si cantidad_trajes = 3 entonces
+26)descuento <-- (subtotal * porcentaje3)/100
+27)valor_total <-- subtotal - descuento
+28)Fin si
+
+29)Si cantidad_trajes = 4 entonces
+30)descuento <-- (subtotal * porcentaje4)/100
+31)valor_total <-- subtotal - descuento
+32)Fin si
+
+33)valor_final <-- valor_total
+
+34)Escribir "El subtotal es:" + subtotal
+35)Escribir "El descuento es:" + descuento
+36)Escribir "El valor total a pagar es:" + valor_final
+
+37)Fin

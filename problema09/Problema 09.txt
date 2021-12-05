@@ -1,0 +1,23 @@
+//Utilizando una estructura repetitiva diseñe un algoritmo para calcular e 
+//imprimir los k primeros términos de la serie:
+//S1 = 12−11+24−22+36−33+48−44
+
+//Miniespesificacion 
+
+1. Inicio 
+2. numero, i[0, n]
+3. numero1, i[0, n]<-- 0
+4. numero2, i[0, n]<-- 0
+5. contador , i[0, n]<-- 1
+6. presentacion, x(50)[{a-z}, {BS}, {A-Z}])<-- " "
+
+9. Escribir "Ingrese el número de terminos a presentar"
+10. Leer numero 
+11. Mientras contador <= numero Entonces 
+12. numero1<-- numero1 + 12
+13. numero2<-- numero2 + 11
+14. contador <-- contador +1
+15. presentacion <-- " "+ presentacion +" +" + numero1 + " -" + numero2
+16.Fin Mientras"
+17. Escribir presentacion 
+18.Fin 

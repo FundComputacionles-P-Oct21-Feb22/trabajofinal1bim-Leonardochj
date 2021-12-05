@@ -1,0 +1,45 @@
+//Elaborar un algoritmo que permita leer un número par y calcule e imprima la 
+//suma de los números pares del 2 hasta el número leído. Si el número leído 
+//es menor a 2 debe imprimir un mensaje de error.
+
+//Miniespesificacion 
+
+1. Inicio 
+2. numero, i[0, n]
+3. metros, i[0, n]
+4. yardas, i[0, n]
+5. pulgadas, i[0, n]
+6. pies, i[0, n]
+7. pmetros , x(50)[{a-z}, {BS}, {A-Z}])<-- " "
+8. pyardas, x(50)[{a-z}, {BS}, {A-Z}])<-- " "
+9. ppulgadas, x(50)[{a-z}, {BS}, {A-Z}])<-- " "
+10. ppies, x(50)[{a-z}, {BS}, {A-Z}])<-- " "
+11. inicio, i[0, n] <-- 1
+12. contador 1, i[0, n]<-- 0
+13. contador 2, i[0, n]<-- 0
+14. contador 3, i[0, n]<-- 0
+15. contador 4, i[0, n]<-- 0
+16. conversion, x(50)[{a-z}, {BS}, {A-Z}])<-- " "
+
+9. Escribir "Ingrese hasta que numero se haran las conversiones"
+10. Leer numero 
+11. Mientras inicio <= numero Entonces 
+12. metros <-- contador1 +100
+13. contador1 <-- metros 
+14. pmetros <-- " " + inicio + " " + metros
+15. yardas <-- contador2 + 3
+16. contador2 <-- yardas
+17. pyardas <--  " " + inicio + " " + yardas
+18. pulgadas <-- contador3 + 2.54
+19. contador3 <-- pulgadas
+20. ppulgadas <-- " " + inicio + " " + pulgadas
+21. pies <-- contador4 + 12
+22. contador4 <-- pies
+23. ppies <-- " " + inicio + " "+ pies
+24. inicio <-- inicio+1
+25.conversion <-- conversion + pmetros + pyardas + ppulgadas + ppies
+26. Fin Mientras"
+27. Escribir conversion 
+28. Fin
+
+
